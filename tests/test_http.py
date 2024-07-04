@@ -15,7 +15,6 @@ def test_second_request():
     
     assert response_data['name'] == 'Chris Wanstrath'
     assert response.status_code == 200
-    #assert response.headers['Server'] == 'github.com'
     assert 'Server' in response.headers
 
 @pytest.mark.http
